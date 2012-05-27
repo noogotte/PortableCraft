@@ -1,0 +1,24 @@
+main: fr.thebrian22950.plugin.portableinventory.Plugin
+name: PortableCraft
+version: 0.1
+author: Brian22950
+commands:
+  portableworkbench:
+    description: Un etabli portable.
+    usage: "/<command>"
+    permission: "portablecraft.pw"
+    aliases: ["pw"]
+  portableenchant:
+    description: Une table d'enchantement portable.
+    usage: "/<command>"
+    permission: "portablecraft.pe"
+    aliases: ["pe"]
+  portablefurnace:
+    description: Un four portable.
+    usage: "/<command>"
+    permission: "portablecraft.pf"
+    aliases: ["pf"]
+ 
+permissions:
+    portablecraft.pw:
+        default: op
