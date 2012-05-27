@@ -1,4 +1,4 @@
-package fr.thebrian22950.plugin.portableinventory;
+package fr.thebrian22950.pc;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Effect;
@@ -22,6 +22,8 @@ public class Plugin extends JavaPlugin {
 			player.openWorkbench(player.getLocation(), true);
 			player.sendMessage(ChatColor.DARK_RED
 					+ "Vous avez ouvert votre établi portable !");
+			player.playEffect(player.getLocation(), Effect.POTION_BREAK, 5);
+
 			return true;
 		}
 		if (cmd.getName().equalsIgnoreCase("portableenchant")) {
@@ -29,16 +31,11 @@ public class Plugin extends JavaPlugin {
 			player.openEnchanting(player.getLocation(), true);
 			player.sendMessage(ChatColor.DARK_RED
 					+ "Vous avez ouvert votre table d'enchantement portable !");
-			return true;
-		}
-		if (cmd.getName().equalsIgnoreCase("portablefurnace")) {
-			Player player = (Player) sender;
 			player.playEffect(player.getLocation(), Effect.POTION_BREAK, 5);
-			
-			player.sendMessage(ChatColor.DARK_RED
-					+ "Vous avez ouvert votre table d'enchantement portable !");
+
 			return true;
 		}
+		
 		return false;
 	}
 }

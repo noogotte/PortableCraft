@@ -1,4 +1,4 @@
-main: fr.thebrian22950.plugin.portableinventory.Plugin
+main: fr.thebrian22950.pc.Plugin
 name: PortableCraft
 version: 0.1
 author: Brian22950
@@ -13,12 +13,10 @@ commands:
     usage: "/<command>"
     permission: "portablecraft.pe"
     aliases: ["pe"]
-  portablefurnace:
-    description: Un four portable.
-    usage: "/<command>"
-    permission: "portablecraft.pf"
-    aliases: ["pf"]
  
 permissions:
     portablecraft.pw:
         default: op
+    portablecraft.pe:
+        default: op
+        
