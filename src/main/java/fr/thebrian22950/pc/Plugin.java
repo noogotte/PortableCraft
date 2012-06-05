@@ -21,7 +21,7 @@ public class Plugin extends JavaPlugin {
 			Player player = (Player) sender;
 			player.openWorkbench(player.getLocation(), true);
 			player.sendMessage(ChatColor.DARK_RED
-					+ "Vous avez ouvert votre établi portable !");
+					+ "Vous avez ouvert votre Ã©tabli portable !");
 			player.playEffect(player.getLocation(), Effect.POTION_BREAK, 5);
 
 			return true;
